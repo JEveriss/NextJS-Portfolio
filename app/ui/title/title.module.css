@@ -1,0 +1,17 @@
+.title__FirstName,
+.title__LastName {
+  display: grid;
+  font-size: 6rem;
+  grid-template-columns: repeat(7, 1fr);
+  line-height: 1;
+}
+.title__Letter {
+  margin: auto;
+  max-width: 7rem;
+  text-align: center;
+  text-shadow: 0px 0px var(--primary-accent);
+  transition: text-shadow 1s;
+}
+.title__Letter:hover {
+  text-shadow: 10px 10px var(--primary-accent);
+}

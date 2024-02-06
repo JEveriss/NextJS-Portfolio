@@ -1,0 +1,130 @@
+.projects__Wrapper {
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+.projects__Wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__Card {
+  border-radius: 1rem; 
+  padding: 0.5rem;
+  margin:1rem;
+  position: relative;
+  transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
+}
+.projects__Card::after {
+  background: var(--primary-black);
+  bottom: 0;
+  content: "";
+  height: 0.2rem;
+  left: 10%;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.8s;
+  width: 80%;
+}
+.projects__Card:hover {
+  box-shadow: 0px 0px 100px 50px var(--hover-light) inset,
+  0px 0px 8px 0px var(--hover-light)
+}
+.projects__Card:hover::after {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.projects__Description {
+  margin: 3rem 0;
+}
+
+.projects__List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 0.5rem;
+}
+
+.projects__Pill {
+  background-color: var(--primary-background);
+  border-radius: 5rem;
+  border: var(--primary-black) solid 0.2rem;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0.9rem 2rem;
+  transition: border-color 0.5s;
+}
+
+.projects__Pill:hover {
+  border-color: var(--primary-accent);
+}
+
+/* .projects__Card:hover{
+  opacity: 0;
+} */
+
+.projects__TitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.projects__Title {
+  align-items: center;
+  display: flex;
+  font-size: 3.5rem;
+  width: 50%;
+}
+
+.projects__Image {
+  border-radius: 1rem;
+  border: solid 0.2rem var(--hover-light);
+  height: 40%;
+  width: 40%;
+}
+.projects__Placeholder {
+  background-color: var(--primary-accent);
+  color: var(--primary-black);
+  display: grid;
+  height: 12rem;
+  place-content: center;
+}
+
+@media (max-width: 720px) {
+  .projects__Pill {
+    padding: 0.4rem 2rem;
+  }
+}
+
+/*
+
+div {
+  width: 200px;
+  background: red;
+  position: relative;
+}
+
+div:after {
+  transition: all .2s linear;
+  background: transparent; 
+  color: transparent; 
+  content: "";
+    position: absolute;
+  bottom: -4px;
+  left: 10%;
+  height: 4px;
+  width: 80%;
+}
+
+.test:after {
+  background: green;
+  color: black;
+
+  bottom: -4px;
+  left: 10%;
+  height: 4px;
+  width: 80%;
+} 
+*/

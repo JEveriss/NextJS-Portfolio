@@ -1,0 +1,35 @@
+.experience__Card {
+  display: flex;
+  flex-direction: column;
+}
+/* .experience__Company::after {
+  background: var(--primary-black);
+  bottom: 0;
+  content: "";
+  height: 0.2rem;
+  left: 10%;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.8s;
+  width: 80%;
+} */
+.experience__Company {
+  line-height: 1;
+  font-size: 3rem;
+}
+.experience__Position{
+  padding: 1rem 0;
+}
+/* .experience__Description{
+
+} */
+.experience__Dates{
+  padding: 1rem 0;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .experience__Card {
+    gap: 0.5rem;
+  }
+}
