@@ -11,31 +11,14 @@
 .projects__Card {
   border-radius: 1rem;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
   transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
 }
-.projects__Card:first-child {
-  padding-top: 3rem;
-}
-.projects__Card::before {
-  background: var(--primary-black);
-  bottom: 0;
-  content: "";
-  height: 0.2rem;
-  left: 10%;
-  opacity: 1;
-  position: absolute;
-  transition: opacity 0.8s;
-  width: 80%;
-}
+
 .projects__Card:hover {
   box-shadow: 0px 0px 100px 50px var(--hover-light) inset,
     0px 0px 8px 0px var(--hover-light);
-}
-.projects__Card:hover::before {
-  opacity: 0;
-  transition: 0.2s;
 }
 
 .projects__Description {
@@ -46,7 +29,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 2rem 0.5rem;
 }
 
 .projects__Pill {
@@ -55,7 +37,7 @@
   border: var(--primary-black) solid 0.2rem;
   line-height: 1;
   list-style-type: none;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem 0;
   padding: 0.9rem 2rem;
   transition: border-color 0.5s;
 }
@@ -96,34 +78,3 @@
     padding: 0.4rem 2rem;
   }
 }
-
-/*
-
-div {
-  width: 200px;
-  background: red;
-  position: relative;
-}
-
-div:after {
-  transition: all .2s linear;
-  background: transparent; 
-  color: transparent; 
-  content: "";
-    position: absolute;
-  bottom: -4px;
-  left: 10%;
-  height: 4px;
-  width: 80%;
-}
-
-.test:after {
-  background: green;
-  color: black;
-
-  bottom: -4px;
-  left: 10%;
-  height: 4px;
-  width: 80%;
-} 
-*/

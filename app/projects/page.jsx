@@ -13,6 +13,8 @@ function Projects() {
     <section id="Projects" className={styles.projects__Wrapper}>
       {projects.map((project, i) => {
         return (
+          <>
+
           <div className={styles.projects__Card} key={i}>
             <Link className={styles.projects__TitleWrapper} href={project.link}>
               <h3 className={styles.projects__Title}>{project.name}</h3>
@@ -43,8 +45,9 @@ function Projects() {
                 );
               })}
             </ul>
-            {/* <div className={styles.projects__Break}></div> */}
           </div>
+
+          </>
         );
       })}
     </section>
