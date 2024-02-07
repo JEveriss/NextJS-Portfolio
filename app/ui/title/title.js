@@ -6,7 +6,7 @@ const lastName = "everiss";
 
 export default function Title() {
   return (
-    <Link href="/">
+    <Link href="/" className={styles.title__Wrapper}>
       <h1
         aria-label="Jacques"
         className={`${styles.title__FirstName} ${title.className}`}

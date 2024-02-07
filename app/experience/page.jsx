@@ -6,7 +6,7 @@ const experience = data.experience;
 
 function Experience() {
   return (
-    <section id="Experience" className={styles.experience__Wrapper}>
+    <section className={styles.experience__Wrapper}>
       {experience.map((item, i) => {
         return (
           <div key={i} className={styles.experience__Card}>

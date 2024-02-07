@@ -1,29 +1,23 @@
+/* .experience__Wrapper {
+  margin: 3rem 0 0;
+} */
 .experience__Card {
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
 }
-/* .experience__Company::after {
-  background: var(--primary-black);
-  bottom: 0;
-  content: "";
-  height: 0.2rem;
-  left: 10%;
-  opacity: 1;
-  position: absolute;
-  transition: opacity 0.8s;
-  width: 80%;
-} */
+.experience__Card:first-child {
+  padding-top: 4rem;
+}
+
 .experience__Company {
   line-height: 1;
   font-size: 3rem;
 }
-.experience__Position{
+.experience__Position {
   padding: 1rem 0;
 }
-/* .experience__Description{
-
-} */
-.experience__Dates{
+.experience__Dates {
   padding: 1rem 0;
   text-align: right;
 }

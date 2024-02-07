@@ -9,13 +9,16 @@
 }
 
 .projects__Card {
-  border-radius: 1rem; 
+  border-radius: 1rem;
+  margin: 1rem;
   padding: 0.5rem;
-  margin:1rem;
   position: relative;
   transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
 }
-.projects__Card::after {
+.projects__Card:first-child {
+  padding-top: 3rem;
+}
+.projects__Card::before {
   background: var(--primary-black);
   bottom: 0;
   content: "";
@@ -28,9 +31,9 @@
 }
 .projects__Card:hover {
   box-shadow: 0px 0px 100px 50px var(--hover-light) inset,
-  0px 0px 8px 0px var(--hover-light)
+    0px 0px 8px 0px var(--hover-light);
 }
-.projects__Card:hover::after {
+.projects__Card:hover::before {
   opacity: 0;
   transition: 0.2s;
 }
@@ -60,10 +63,6 @@
 .projects__Pill:hover {
   border-color: var(--primary-accent);
 }
-
-/* .projects__Card:hover{
-  opacity: 0;
-} */
 
 .projects__TitleWrapper {
   display: flex;
