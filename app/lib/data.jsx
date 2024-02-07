@@ -6,6 +6,15 @@ import FullNelsonPage from "../lib/images/FullNelsonPage.png";
 export const data = {
   experience: [
     {
+      company: "Freelance",
+      position: "Frontend Developer",
+      jobStart: "01/09/2023",
+      jobEnd: "Present",
+      description: `Hey, you've got something everybody wants. You've got talent, girl. You have an incredible voice. I'm not just saying that. You heard of Aretha Franklin, right? OK, she's a big lady. But when she sings, she blows people's minds. Everybody wants to party with Aretha! And you know who else has a weight issue?
+      Who?
+      Me. But once I get up on-stage, start doing my thing, people worship me. Because I'm sexy and chubby, man.`,
+    },
+    {
       company: "383 Project",
       position: "Associate Frontend Engineer",
       jobStart: "01/05/2022",
@@ -20,15 +29,6 @@ export const data = {
       Now, listen, this is a big commitment. Don't say yes if you're gonna flake out.
       I won't.
       Larry... welcome to my world.`,
-    },
-    {
-      company: "Freelance",
-      position: "Frontend Developer",
-      jobStart: "01/09/2023",
-      jobEnd: "Present",
-      description: `Hey, you've got something everybody wants. You've got talent, girl. You have an incredible voice. I'm not just saying that. You heard of Aretha Franklin, right? OK, she's a big lady. But when she sings, she blows people's minds. Everybody wants to party with Aretha! And you know who else has a weight issue?
-      Who?
-      Me. But once I get up on-stage, start doing my thing, people worship me. Because I'm sexy and chubby, man.`,
     },
     {
       company: "Meet Bernard",
