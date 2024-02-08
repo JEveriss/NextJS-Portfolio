@@ -1,8 +1,8 @@
+/* MAIN SECTION */
 .main__Wrapper {
   display: flex;
   gap: 3rem;
   width: 100%;
-  /* padding: 3rem 0;  */
 }
 .main__Left,
 .main__Right {
@@ -18,8 +18,18 @@
   height: 100vh;
   position: sticky;
   top: 0;
-  z-index: 99999;
+  z-index: 99;
 }
+
+/* HOME SECTION */
+.home__Wrapper {
+  padding: 4rem 2rem;
+}
+.home__Avatar {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 @media (max-width: 720px) {
   .main__Wrapper {
     flex-direction: column;
@@ -32,10 +42,10 @@
     width: 100%;
     height: 100%;
   }
-  .main__RightMobile{
+  .main__RightMobile {
     display: contents;
   }
-  .main__RightDesktop{
+  .main__RightDesktop {
     display: none;
   }
 }

@@ -3,6 +3,7 @@
   overflow-x: hidden;
   overflow: hidden;
   scrollbar-width: none;
+  padding-bottom: 3rem;
 }
 .projects__Wrapper::-webkit-scrollbar {
   display: none;
@@ -71,10 +72,22 @@
   display: grid;
   height: 12rem;
   place-content: center;
+  text-align: center;
+}
+
+.projects__HeaderWrapper{
+  width: 100%;
 }
 
 @media (max-width: 720px) {
+  .projects__Wrapper {
+    overflow: visible;
+  }
+  .projects__Title {
+    font-size: 2.5rem;
+  }
   .projects__Pill {
     padding: 0.4rem 2rem;
   }
+
 }

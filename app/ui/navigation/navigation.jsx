@@ -3,16 +3,18 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./navigation.module.css";
+import '../../lib/globals.css'
 
 const navLinks = ["About", "Projects", "Experience"];
+
 function Navigation() {
   const pathname = usePathname();
   return (
     <nav className={styles.navigation__Wrapper}>
       <ul>
-        {navLinks.map((navLink) => {
+        {navLinks.map((navLink, i) => {
           return (
-            <li className={styles.navigation__Link} key={navLink}>
+            <li className={styles.navigation__Link} key={`${i}${navLink}`}>
               <Link
                 className={`${styles.navigation__LinkItem} ${
                   pathname === `/${navLink.toLowerCase()}`

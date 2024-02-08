@@ -1,19 +1,19 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./main.module.css";
 import About from "./about/page";
+import avatar from './lib/images/avatar.png'
 
 export default function Home() {
   return (
-    <div>
-      <h3>
-        Here is the sob story of my life. A trajicomical tale about how doing
-        your best isn&apos;t really worth anything and how Beaudelaire was right
-        when he hammered on about the importance of being drunk as often as you
-        can. I know hw was more about the drunkeness of the things that make you
-        happy, but I am fairly sure he mentions wine or something at some point.
-        It has been some time since I read that poem last as I no longer feel
-        the need for a pretentious justification of my alcohol dependency
-      </h3>
+    <div className={styles.home__Wrapper}>
+      <h3 className={styles.home__Title}>Hello!</h3>
+      <p className={styles.home__Paragraph}>
+        {" "}
+        Thank you for taking the time to visit my portfolio. I am frequently
+        updating this site and trying new ideas out, so it might look a bit
+        different the next time you visit.
+      </p>
+      <Image className={styles.home__Avatar} height={"300"} alt="Image of Jacques Everiss looking sexy" src={avatar}/>
     </div>
   );
 }

@@ -3,10 +3,10 @@ import { mono } from "../ui/fonts";
 
 export default function About() {
   return (
-    <section className={styles.about__Wrapper} >
+    <section >
       {/* <BlockAbout /> */}
-      <h2 className={`${styles.about__Title} `}>About</h2>
-      <p>
+      <h2 className="global__Heading">About</h2>
+      <p className={styles.about__Paragraph}>
         Yeah, you know, math, English... What...? Science... What else?
         Geography, history, Latin, Spanish, French, Latin... Math. Did I say
         that already? Anyway, all the stuff you want your kids to know,

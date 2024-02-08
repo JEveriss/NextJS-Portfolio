@@ -9,9 +9,9 @@ function Footer() {
   return (
     <footer className={styles.footer__Wrapper}>
       <ul>
-        {footerLinks.map((footerLink) => {
+        {footerLinks.map((footerLink, i) => {
           return (
-            <li key={footerLink.name}>
+            <li key={`${i}${footerLink}`}>
               <Link href={footerLink.link}>
                 <Image
                   className={styles.footer__Image}

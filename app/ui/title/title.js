@@ -13,7 +13,7 @@ export default function Title() {
       >
         {myName.split("").map((letter, i) => {
           return (
-            <span className={styles.title__Letter} key={i}>
+            <span className={styles.title__Letter} key={`${i}${letter}`}>
               {letter}
             </span>
           );
@@ -25,7 +25,7 @@ export default function Title() {
       >
         {lastName.split("").map((letter, i) => {
           return (
-            <span className={styles.title__Letter} key={i}>
+            <span className={styles.title__Letter} key={`${i}${letter}`}>
               {letter}
             </span>
           );

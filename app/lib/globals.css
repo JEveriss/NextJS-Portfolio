@@ -70,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
   margin: 0;
 }
 h2,
@@ -120,4 +120,25 @@ a {
 }
 .hoverAccent:hover:before {
   width: 80%;
+}
+.global__Heading {
+  margin: 4rem 0 0 2rem ;
+}
+@media (max-width: 720px) {
+  section {
+    gap: 0.5rem;
+  }
+  .global__Heading {
+    backdrop-filter: blur(6px);
+    background-color: var(--primary-background) 50;
+    display: block;
+    font-size: 3rem;
+    overflow: visible;
+    padding: 1rem 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: -webkit-fill-available;
+    z-index: 9999;
+  }
 }

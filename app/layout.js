@@ -1,6 +1,6 @@
 import { Kumbh_Sans, DM_Mono } from "next/font/google";
 import "./lib/globals.css";
-import styles from "./page.module.css";
+import styles from "./main.module.css";
 import Navigation from "./ui/navigation/navigation";
 import EmailLink from "./ui/emailLink/emailLink";
 import Title from "./ui/title/title";
@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightDesktop}`}>
-          
             {children}
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightMobile}`}>

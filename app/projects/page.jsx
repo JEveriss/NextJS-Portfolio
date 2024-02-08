@@ -4,17 +4,18 @@ import { data } from "../lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./projects.module.css";
-
+import '../lib/globals.css'
 
 const projects = data.projects;
 
 function Projects() {
   return (
     <section id="Projects" className={styles.projects__Wrapper}>
+
+        <h2 className="global__Heading">Projects</h2>
+
       {projects.map((project, i) => {
         return (
-          <>
-
           <div className={styles.projects__Card} key={i}>
             <Link className={styles.projects__TitleWrapper} href={project.link}>
               <h3 className={styles.projects__Title}>{project.name}</h3>
@@ -39,15 +40,13 @@ function Projects() {
             <ul className={styles.projects__List}>
               {project.techStack.sort().map((stack, i) => {
                 return (
-                  <li className={styles.projects__Pill} key={i}>
+                  <li className={styles.projects__Pill} key={`${i}${stack}`}>
                     {stack}
                   </li>
                 );
               })}
             </ul>
           </div>
-
-          </>
         );
       })}
     </section>
