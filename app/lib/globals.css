@@ -1,3 +1,8 @@
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 body {
   margin: auto;
   max-width: 1000px;
@@ -11,11 +16,6 @@ body::-webkit-scrollbar {
   --primary-background: #fffefb;
   --primary-accent: #fc7a57;
   --hover-light: #fff0e7;
-
-  /* --primary-black: #000814;
-  --primary-background: #fefaeb;
-  --primary-accent: #e6f0ff;
-  --hover-light: #e6f0ff; */
 }
 
 *,
@@ -37,7 +37,6 @@ html {
 }
 
 body {
-  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
   margin: auto;
   background-color: var(--primary-background);
@@ -76,6 +75,7 @@ h6 {
 h2,
 h3 {
   font-family: var(--font-mono);
+  line-height: 1;
 }
 li {
   list-style-position: inside;
@@ -90,7 +90,8 @@ section {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  padding: 4.5rem 1rem;
+  gap: 6rem;
 }
 a {
   color: var(--primary-black);
@@ -102,16 +103,11 @@ a {
   transition: all 0.5s;
   position: relative;
 }
-/* .hoverAccent:hover {
-  color: var(--primary-black);
-} */
 
 .hoverAccent:before {
   background: var(--primary-accent);
-  /* bottom: -4px; */
   color: transparent;
   content: "";
-  /* height: 4px; */
   left: 0;
   margin: auto;
   position: absolute;
@@ -120,4 +116,22 @@ a {
 }
 .hoverAccent:hover:before {
   width: 80%;
+}
+
+.global__Title {
+  line-height: 1;
+  font-size: 3rem;
+  width: 100%;
+  padding-top: 3.5rem;
+  display: none;
+}
+@media (max-width: 720px) {
+  section {
+    gap: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .global__Title {
+    display: flex;
+  }
 }

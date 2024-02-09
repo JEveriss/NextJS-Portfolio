@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 720px) {
+  .navigation__Wrapper {
+    display: none;
+  }
   .navigation__Wrapper > ul {
     flex-direction: row;
     justify-content: space-between;

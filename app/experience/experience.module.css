@@ -4,10 +4,6 @@
 .experience__Card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 2rem;
-}
-.experience__Card:first-child {
-  padding-top: 4rem;
 }
 
 .experience__Company {

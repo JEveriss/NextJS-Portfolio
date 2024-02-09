@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className={styles.about__Wrapper} >
       {/* <BlockAbout /> */}
-      <h2 className={`${styles.about__Title} `}>About</h2>
+      <h2 className="global__Title">About</h2>
       <p>
         Yeah, you know, math, English... What...? Science... What else?
         Geography, history, Latin, Spanish, French, Latin... Math. Did I say

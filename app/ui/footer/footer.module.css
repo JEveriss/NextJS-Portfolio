@@ -6,7 +6,7 @@
 .footer__Wrapper > ul {
   display: flex;
   list-style-type: none;
-  margin: 2rem 1rem;
+  margin: 2rem 2rem;
 }
 .footer__Wrapper > ul > li {
   margin-right: 2rem;

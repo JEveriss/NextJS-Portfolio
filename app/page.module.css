@@ -20,22 +20,49 @@
   top: 0;
   z-index: 99999;
 }
+
+.home__Wrapper {
+  gap: 1rem;
+}
+.home__Avatar {
+  padding: 3rem;
+}
+.home__AvatarWrapper {
+  margin: 0 auto;
+  position: relative;
+}
+.home__Avatar:hover + .home__AvatarText {
+  opacity: 1;
+}
+.home__AvatarText {
+  position: absolute;
+  background-color: var(--primary-background);
+  border: 1px solid var(--primary-black);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  top: 20%;
+  left: 62%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
 @media (max-width: 720px) {
   .main__Wrapper {
     flex-direction: column;
   }
   .main__Left {
     position: relative;
+    gap: 5rem;
   }
   .main__Left,
   .main__Right {
     width: 100%;
     height: 100%;
   }
-  .main__RightMobile{
+  .main__RightMobile {
     display: contents;
   }
-  .main__RightDesktop{
+  .main__RightDesktop {
     display: none;
   }
 }
