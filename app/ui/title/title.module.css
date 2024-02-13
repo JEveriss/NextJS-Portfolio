@@ -1,4 +1,4 @@
-.title__Wrapper{
+.title__Wrapper {
   margin: 3rem 0 0;
 }
 
@@ -9,6 +9,7 @@
   grid-template-columns: repeat(7, 1fr);
   line-height: 1;
 }
+
 .title__Letter {
   margin: auto;
   max-width: 7rem;
@@ -16,6 +17,7 @@
   text-shadow: 0px 0px var(--primary-accent);
   transition: text-shadow 1s;
 }
+
 .title__Letter:hover {
   text-shadow: 10px 10px var(--primary-accent);
 }

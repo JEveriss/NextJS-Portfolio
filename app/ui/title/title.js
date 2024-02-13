@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { mono, title } from "../fonts";
+import { title } from "../fonts";
 import styles from "./title.module.css";
-const myName = "jacques";
+
+const firstName = "jacques";
 const lastName = "everiss";
 
 export default function Title() {
@@ -11,7 +12,7 @@ export default function Title() {
         aria-label="Jacques"
         className={`${styles.title__FirstName} ${title.className}`}
       >
-        {myName.split("").map((letter, i) => {
+        {firstName.split("").map((letter, i) => {
           return (
             <span className={styles.title__Letter} key={i}>
               {letter}

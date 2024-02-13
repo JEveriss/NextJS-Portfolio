@@ -2,8 +2,8 @@
   display: flex;
   gap: 3rem;
   width: 100%;
-  /* padding: 3rem 0;  */
 }
+
 .main__Left,
 .main__Right {
   width: 50%;
@@ -12,6 +12,7 @@
 .main__RightMobile {
   display: none;
 }
+
 .main__Left {
   display: flex;
   flex-direction: column;
@@ -24,6 +25,7 @@
 .home__Wrapper {
   gap: 1rem;
 }
+
 .home__Avatar {
   padding: 3rem;
 }
@@ -49,19 +51,24 @@
 @media (max-width: 720px) {
   .main__Wrapper {
     flex-direction: column;
+    overflow: hidden;
   }
+
   .main__Left {
     position: relative;
     gap: 5rem;
   }
+
   .main__Left,
   .main__Right {
     width: 100%;
     height: 100%;
   }
+
   .main__RightMobile {
     display: contents;
   }
+
   .main__RightDesktop {
     display: none;
   }

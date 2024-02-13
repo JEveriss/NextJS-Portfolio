@@ -1,0 +1,6 @@
+.fadeReveal__Visible {
+  opacity: 1;
+}
+.fadeReveal__Hidden {
+  opacity: 0;
+}

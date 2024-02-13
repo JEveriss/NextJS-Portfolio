@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { data } from "@/app/lib/data";
 import styles from "./emailLink.module.css";
+import { data } from "@/app/lib/data";
 
 const about = data.about;
 
