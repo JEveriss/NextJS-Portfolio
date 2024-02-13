@@ -1,17 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./fadeReaveal.module.css";
+
 const FadeReveal = ({ children, duration, threshold, x }) => {
   const ref = useRef(null);
   const [intersecting, setIntersecting] = useState(false);
 
-//   Among others, InterSectionObserver contains:
-//   intersectionRatio
-//   isIntersecting
-//   isVisible
-//   ref.current referes to the elements that are visible on the screen
-  
   useEffect(() => {
     if (ref.current) {
       const intersectObs = new IntersectionObserver(
@@ -44,7 +39,9 @@ const FadeReveal = ({ children, duration, threshold, x }) => {
       }}
       ref={ref}
       className={` ${
-        !intersecting ? `${styles.opacity0}` : `${styles.opacity100}`
+        !intersecting
+          ? `${styles.fadeReveal__Hidden}`
+          : `${styles.fadeReveal__Visible}`
       } `}
     >
       {children}

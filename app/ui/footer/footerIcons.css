@@ -1,0 +1,9 @@
+path {
+  fill: var(--primary-accent);
+  transition: all 0.4s;
+}
+
+li:hover path {
+  fill: var(--primary-black);
+  transition: all 0.4s;
+}

@@ -1,8 +1,6 @@
-.opacity100 {
+.fadeReveal__Visible {
   opacity: 1;
-  /* transition: opacity 9s; */
 }
-.opacity0 {
+.fadeReveal__Hidden {
   opacity: 0;
-  /* transition: opacity 9s; */
 }

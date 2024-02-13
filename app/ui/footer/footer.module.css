@@ -3,14 +3,16 @@
   position: fixed;
 }
 
-.footer__Wrapper > ul {
+.footer__IconList {
   display: flex;
   list-style-type: none;
   margin: 2rem 2rem;
 }
-.footer__Wrapper > ul > li {
+
+.footer__IconLink {
   margin-right: 2rem;
 }
+
 .footer__Image {
   border: 0px solid var(--primary-background);
   transition: border 0.2s;
@@ -18,8 +20,4 @@
 .footer__Image:hover {
   border: 1px solid var(--primary-background);
 }
-/* @media (max-width: 720px) {
-  .footer__Wrapper > ul {
-    margin-top: 3rem;
-  }
-} */
+

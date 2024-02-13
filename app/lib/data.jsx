@@ -1,5 +1,3 @@
-import GithubIcon from "../lib/icons/GithubIcon.svg";
-import LinkedinIcon from "../lib/icons/LinkedinIcon.svg";
 import TheIvyHousePage from "../lib/images/TheIvyHousePage.png";
 import RandomMtGCardPAge from "../lib/images/RandomMtGCardPage.png";
 import FullNelsonPage from "../lib/images/FullNelsonPage.png";
@@ -8,6 +6,7 @@ export const data = {
     {
       company: "Freelance",
       position: "Frontend Developer",
+      link: "/",
       jobStart: "01/09/2023",
       jobEnd: "Present",
       description: `Hey, you've got something everybody wants. You've got talent, girl. You have an incredible voice. I'm not just saying that. You heard of Aretha Franklin, right? OK, she's a big lady. But when she sings, she blows people's minds. Everybody wants to party with Aretha! And you know who else has a weight issue?
@@ -17,22 +16,17 @@ export const data = {
     {
       company: "383 Project",
       position: "Associate Frontend Engineer",
+      link: "https://www.383project.com/",
       jobStart: "01/05/2022",
       jobEnd: "01/09/2023",
-      description: `I'm not cool enough. People in bands are cool. I'm not cool.
-      Dude, you are cool. The way you play. Why do you say you're not cool?
-      Nobody ever talks to me.
-      Well, those days are over, buddy. You could be the ugliest sad sack on the planet, but if you're in a rocking band, you're the cat's pajamas. You're the bee's knees.
-      Bee's knees?
-      Yeah, the bee's knees. You'll be the most popular guy in school.
-      OK. I'll do it.
-      Now, listen, this is a big commitment. Don't say yes if you're gonna flake out.
-      I won't.
-      Larry... welcome to my world.`,
+      description: `At my time at 383 I worked as part of the Hilton Hotels Product Team where I contributed to feature development, maintaining existing React.js components, and reducing technical debt that had accrued over the 9 year lifespan of the project. I was also worked with the Support Team dealing with time sensitive and often urgent SLAs.
+
+      I also led the development of projects including building a WordPress site to show the company’s cross-browser compatibility to clients and building a working Shopify prototype that could be demoed to clients`,
     },
     {
       company: "Meet Bernard",
       position: "Store Manager",
+      link: "https://www.meetbernard.com/",
       jobStart: "20/09/2020",
       jobEnd: "30/10/2021",
       description: `Do you think I could cut out a little early today? I got some stuff I gotta do. It's cool. I can stay.
@@ -45,25 +39,25 @@ export const data = {
   about: {
     fullName: "Jacques Everiss",
     email: "Jacques.Everiss@Gmail.com",
-    description: ``,
+    greeting: `Thank you for taking the time to visit my portfolio. I am frequently
+    updating this site and trying new ideas out, so it might look a bit
+    different the next time you visit.`,
+    description: `Yeah, you know, math, English... What...? Science... What else?
+    Geography, history, Latin, Spanish, French, Latin... Math. Did I say
+    that already? Anyway, all the stuff you want your kids to know,
+    it's been covered, OK?
+    So... it was great to meet you all, and drive safe.`
   },
 
   footerLinks: [
     {
       link: "https://github.com/JEveriss",
-      img: GithubIcon,
       name: "GitHub",
     },
     {
       link: "https://www.linkedin.com/in/jacques-everiss/",
-      img: LinkedinIcon,
       name: "LinkedIn",
     },
-    // {
-    //   link: "https://www.instagram.com/jacquesattacques/",
-    //   img: InstagramIcon,
-    //   name: "Instagram",
-    // },
   ],
   projects: [
     {

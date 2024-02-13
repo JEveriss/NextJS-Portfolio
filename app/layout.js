@@ -1,16 +1,15 @@
-import { Kumbh_Sans, DM_Mono } from "next/font/google";
-import "./lib/globals.css";
 import styles from "./page.module.css";
-import Navigation from "./ui/navigation/navigation";
-import EmailLink from "./ui/emailLink/emailLink";
-import Title from "./ui/title/title";
-import Footer from "./ui/footer/footer";
+import "./lib/globals.css";
+import { Kumbh_Sans } from "next/font/google";
 import About from "./about/page";
-import Projects from "./projects/page";
+import EmailLink from "./ui/emailLink/emailLink";
 import Experience from "./experience/page";
+import Footer from "./ui/footer/footer";
+import Navigation from "./ui/navigation/navigation";
+import Projects from "./projects/page";
+import Title from "./ui/title/title";
 
 const kumbh = Kumbh_Sans({ subsets: ["latin"], weight: "400" });
-const mono = DM_Mono({ subsets: ["latin"], weight: "500" });
 
 export const metadata = {
   title: "Jacques Portfolio",
@@ -29,7 +28,6 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightDesktop}`}>
-          
             {children}
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightMobile}`}>

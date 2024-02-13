@@ -2,8 +2,8 @@
   -ms-overflow-style: none;
   overflow-x: hidden;
   overflow: hidden;
-  scrollbar-width: none;
   padding: 1rem 0 6rem 0;
+  scrollbar-width: none;
 }
 .projects__Wrapper::-webkit-scrollbar {
   display: none;
@@ -11,12 +11,10 @@
 
 .projects__Card {
   border-radius: 1rem;
-  /* margin: 3rem 0; */
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: relative;
   transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
 }
-
 .projects__Card:hover {
   box-shadow: 0px 0px 100px 50px var(--hover-light) inset,
     0px 0px 8px 0px var(--hover-light);
@@ -42,7 +40,6 @@
   padding: 0.9rem 2rem;
   transition: border-color 0.5s;
 }
-
 .projects__Pill:hover {
   border-color: var(--primary-accent);
 }
@@ -66,6 +63,7 @@
   height: 40%;
   width: 40%;
 }
+
 .projects__Placeholder {
   background-color: var(--primary-accent);
   color: var(--primary-black);
@@ -74,6 +72,7 @@
   place-content: center;
   text-align: center;
 }
+
 .projects__Header {
   padding-left: 1rem;
 }
@@ -82,6 +81,11 @@
   .projects__Wrapper {
     gap: 3rem;
   }
+  
+  .projects__Card {
+    padding: 1rem;
+  }
+
   .projects__Pill {
     padding: 0.4rem 2rem;
   }

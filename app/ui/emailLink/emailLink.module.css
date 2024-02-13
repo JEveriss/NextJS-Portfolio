@@ -1,12 +1,15 @@
 .emailLink__Wrapper {
   margin: 0 2rem;
 }
+
 .emailLink__Text {
   margin-bottom: 1rem;
 }
+
 .emailLink__Link {
   cursor: pointer;
 }
+
 .emailLink__Link:before {
   bottom: -2px;
   height: 2px;

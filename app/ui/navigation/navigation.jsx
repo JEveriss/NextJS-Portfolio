@@ -5,11 +5,12 @@ import Link from "next/link";
 import styles from "./navigation.module.css";
 
 const navLinks = ["About", "Projects", "Experience"];
+
 function Navigation() {
   const pathname = usePathname();
   return (
     <nav className={styles.navigation__Wrapper}>
-      <ul>
+      <ul className={styles.navigation__LinkList}>
         {navLinks.map((navLink) => {
           return (
             <li className={styles.navigation__Link} key={navLink}>

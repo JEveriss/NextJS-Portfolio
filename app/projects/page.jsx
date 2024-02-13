@@ -1,9 +1,9 @@
 "use client";
 
-import { data } from "../lib/data";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./projects.module.css";
+import { data } from "../lib/data";
 import FadeReveal from "../ui/fadeReveal/fadeReveal";
 
 const projects = data.projects;
