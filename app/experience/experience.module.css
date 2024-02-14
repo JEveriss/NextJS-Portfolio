@@ -29,4 +29,7 @@
   .experience__Card {
     gap: 0.5rem;
   }
+  .experience__Company {
+    font-size: 2.8rem;
+  }
 }
