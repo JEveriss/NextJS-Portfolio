@@ -2,7 +2,8 @@
   -ms-overflow-style: none;
   overflow-x: hidden;
   overflow: hidden;
-  padding: 1rem 0 6rem 0;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
   scrollbar-width: none;
 }
 .projects__Wrapper::-webkit-scrollbar {
@@ -80,10 +81,14 @@
 @media (max-width: 720px) {
   .projects__Wrapper {
     gap: 3rem;
+    padding-bottom: 0;
   }
-  
+
   .projects__Card {
     padding: 1rem;
+  }
+  .projects__Title {
+    font-size: 2.8rem;
   }
 
   .projects__Pill {
