@@ -11,9 +11,9 @@ function Navigation() {
   return (
     <nav className={styles.navigation__Wrapper}>
       <ul className={styles.navigation__LinkList}>
-        {navLinks.map((navLink) => {
+        {navLinks.map((navLink, i) => {
           return (
-            <li className={styles.navigation__Link} key={navLink}>
+            <li className={styles.navigation__Link} key={i + navLink}>
               <Link
                 className={`${styles.navigation__LinkItem} ${
                   pathname === `/${navLink.toLowerCase()}`

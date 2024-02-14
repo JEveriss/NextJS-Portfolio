@@ -121,6 +121,14 @@ a {
   width: 100%;
 }
 
+/* .global__Emphasise {
+  transition: all 1s;
+  display: inline-block;
+}
+.global__Emphasise:hover {
+  transform: skew(-12deg);
+} */
+
 @media (max-width: 720px) {
   section {
     gap: 3rem;
