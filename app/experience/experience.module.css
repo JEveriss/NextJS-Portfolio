@@ -1,6 +1,14 @@
-.experience__Card {
+/* .experience__Card {
   display: flex;
   flex-direction: column;
+  transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
+} */
+.global__Emphasise {
+  transition: all 0.2s;
+  display: inline-block;
+}
+.experience__Description:hover > span > b {
+  transform: skew(-12deg);
 }
 
 .experience__Company {
