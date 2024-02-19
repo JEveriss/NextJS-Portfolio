@@ -36,6 +36,7 @@ const FadeReveal = ({ children, duration, threshold, x }) => {
       style={{
         transitionDuration: duration,
         transform: !intersecting ? `translate(${x}px)` : "translate(0px)",
+
       }}
       ref={ref}
       className={` ${

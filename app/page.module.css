@@ -51,7 +51,7 @@
 @media (max-width: 720px) {
   .main__Wrapper {
     flex-direction: column;
-    overflow: hidden;
+    overflow: clip;
   }
 
   .main__Left {

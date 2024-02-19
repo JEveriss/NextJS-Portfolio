@@ -13,8 +13,8 @@ function Experience() {
       <h2 className="global__Title">Experience</h2>
       {experience.map((item, i) => {
         return (
-          <FadeReveal className={styles.experience__Card} key={i + item} x={200} duration="0.5s" threshold={0.01}>
-
+          <FadeReveal key={i + item} x={200} duration="0.5s" threshold={0.01}>
+            <div className={styles.experience__Card}>
               <Link href={item?.link}>
                 <h3 className={styles.experience__Company}>{item.company}</h3>
               </Link>
@@ -25,7 +25,7 @@ function Experience() {
               <p className={styles.experience__Dates}>
                 {item.jobStart} - {item.jobEnd}
               </p>
-
+            </div>
           </FadeReveal>
         );
       })}

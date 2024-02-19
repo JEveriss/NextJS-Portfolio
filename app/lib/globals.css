@@ -86,7 +86,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  padding: 4.5rem 1rem;
+  padding: 4.5rem 0;
 }
 
 a {
@@ -140,6 +140,12 @@ a {
   }
 
   .global__Title {
+    position: sticky;
     display: flex;
+    padding: 1rem 1rem;
+    top: 0;
+    background-color: #fffefb55;
+    backdrop-filter: blur(5px);
+    z-index: 9999;
   }
 }

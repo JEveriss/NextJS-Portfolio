@@ -11,7 +11,7 @@ const projects = data.projects;
 function Projects() {
   return (
     <section id="Projects" className={styles.projects__Wrapper}>
-      <h2 className={`${styles.projects__Header} global__Title`}>Projects</h2>
+      <h2 className="global__Title">Projects</h2>
       {projects.map((project, i) => {
         return (
           <>
