@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./footer.module.css";
 import "./footerIcons.css";
-import { data } from "@/app/lib/data";
+import {data} from '../../lib/data'
 import { LinkedInIcon, GitHubIcon } from "./footerIcons";
 
 const footerLinks = data.footerLinks;

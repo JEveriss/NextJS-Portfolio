@@ -8,7 +8,7 @@ const about = data.about;
 
 export default function Home() {
   return (
-    <FadeReveal duration="2s" x={6}>
+    <FadeReveal duration="2s">
       <section className={styles.home__Wrapper}>
         <h3 className={styles.home__Title}>Hello!</h3>
         <p className={styles.home__Paragraph}> {about.greeting}</p>
