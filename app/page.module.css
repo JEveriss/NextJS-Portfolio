@@ -24,6 +24,7 @@
 
 .home__Wrapper {
   gap: 1rem;
+  padding: 4.5rem 1rem;
 }
 
 .home__Avatar {
@@ -37,14 +38,13 @@
   opacity: 1;
 }
 .home__AvatarText {
-  position: absolute;
-  background-color: var(--primary-background);
-  border: 1px solid var(--primary-black);
   border-radius: 0.5rem;
-  padding: 1rem;
-  top: 20%;
+  color: var(--primary-background);
   left: 62%;
   opacity: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 20%;
   transition: opacity 0.2s;
 }
 
@@ -52,11 +52,12 @@
   .main__Wrapper {
     flex-direction: column;
     overflow: clip;
+    gap: 4rem;
   }
 
   .main__Left {
     position: relative;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .main__Left,

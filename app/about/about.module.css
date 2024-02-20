@@ -1,5 +1,5 @@
 .about__Wrapper {
-  padding: 4.5rem 2rem;
+  padding: 4.5rem 1rem;
 }
 .about__Title {
   line-height: 1;
@@ -8,11 +8,11 @@
 
 @media (max-width: 720px) {
   .about__Wrapper {
-    padding: 1rem 2rem;
+    padding: 0 2rem 2rem 2rem;
     display: grid;
     gap: 3rem;
   }
   .about__Paragraph {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }

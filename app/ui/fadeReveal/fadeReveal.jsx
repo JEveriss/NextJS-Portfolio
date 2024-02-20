@@ -24,9 +24,10 @@ const FadeReveal = ({ children, duration, threshold, x }) => {
 
       intersectObs.observe(ref.current);
 
+      const newRefVar = ref.current;
       return () => {
-        if (ref.current) {
-          intersectObs.unobserve(ref.current);
+        if (newRefVar) {
+          intersectObs.unobserve(newRefVar);
         }
       };
     }
@@ -36,7 +37,6 @@ const FadeReveal = ({ children, duration, threshold, x }) => {
       style={{
         transitionDuration: duration,
         transform: !intersecting ? `translate(${x}px)` : "translate(0px)",
-
       }}
       ref={ref}
       className={` ${

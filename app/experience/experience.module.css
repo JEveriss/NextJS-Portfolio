@@ -24,6 +24,9 @@
 }
 
 @media (max-width: 720px) {
+  .experience__Wrapper {
+    padding-bottom: 5rem;
+  }
   .experience__Card {
     gap: 0.5rem;
   }

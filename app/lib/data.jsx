@@ -92,10 +92,8 @@ export const data = {
         School of Code, the 16 week full-stack intensive bootcamp allowed me to
         retrain as a Web Developer, but also aided with getting employment. I
         was successful in my application to the 383 Project as an Associate
-        Frontend Engineer.
-        <br />
-        <br />
-        Then I was made redundant again.
+        Frontend Engineer, where I worked on several project during my time
+        there.
       </>
     ),
   },

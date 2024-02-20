@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import styles from "./emailLink.module.css";
-import { data } from "@/app/lib/data";
+import { data } from "../../lib/data";
 
 const about = data.about;
 
