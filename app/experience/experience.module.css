@@ -1,8 +1,6 @@
-/* .experience__Card {
-  display: flex;
-  flex-direction: column;
-  transition: background-color 0.8s, box-shadow 0.8s, opacity 0.8s;
-} */
+.experience__Card {
+  padding: 0 1rem;
+}
 .global__Emphasise {
   transition: all 0.2s;
   display: inline-block;
