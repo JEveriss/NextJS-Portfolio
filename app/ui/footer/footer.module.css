@@ -6,7 +6,7 @@
 .footer__IconList {
   display: flex;
   list-style-type: none;
-  margin: 2rem 2rem;
+  margin: 2rem;
 }
 
 .footer__IconLink {
@@ -21,3 +21,8 @@
   border: 1px solid var(--primary-background);
 }
 
+@media (max-width: 720px) {
+  .footer__IconList {
+    margin: 3rem;
+  }
+}
