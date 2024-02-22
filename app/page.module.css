@@ -47,6 +47,9 @@
   top: 20%;
   transition: opacity 0.2s;
 }
+.home__EmailLink {
+  display: none;
+}
 
 @media (max-width: 720px) {
   .main__Wrapper {
@@ -72,5 +75,18 @@
 
   .main__RightDesktop {
     display: none;
+  }
+
+  .main__EmailLink {
+    display: none;
+  }
+  .home__Wrapper {
+    padding: 2rem 2rem 0 2rem;
+  }
+  .home__AvatarWrapper {
+    display: none;
+  }
+  .home__EmailLink {
+    display: inline;
   }
 }

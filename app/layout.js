@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import "./lib/globals.css";
 import { Kumbh_Sans } from "next/font/google";
-import About from "./about/page";
+import Home from "./page";
 import EmailLink from "./ui/emailLink/emailLink";
 import Experience from "./experience/page";
 import Footer from "./ui/footer/footer";
@@ -24,14 +24,19 @@ export default function RootLayout({ children }) {
           <div className={styles.main__Left}>
             <Title />
             <Navigation />
-            <EmailLink />
+            <span className={styles.main__EmailLink}>
+              <EmailLink />
+            </span>
             <Footer />
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightDesktop}`}>
             {children}
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightMobile}`}>
-            <About /> <Projects /> <Experience />
+            <Home />
+            
+            <Projects />
+            <Experience />
           </div>
         </div>
       </body>
