@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import avatar from "./lib/images/avatar.png";
 import { data } from "./lib/data";
 import FadeReveal from "./ui/fadeReveal/fadeReveal";
+import EmailLink from "./ui/emailLink/emailLink";
 
 const about = data.about;
 
@@ -17,12 +18,16 @@ export default function Home() {
           <Image
             className={styles.home__Avatar}
             height="300"
-            alt="A photo of Jacques Everiss looking smug, yet polite"
+            width="auto"
+            alt="A photo of Jacques Everiss looking smug yet polite"
             src={avatar}
           />
           <p className={styles.home__AvatarText}>Hello</p>
         </div>
       </section>
+      <span className={styles.home__EmailLink}>
+      <EmailLink />
+      </span>
     </FadeReveal>
   );
 }

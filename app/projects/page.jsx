@@ -27,6 +27,8 @@ function Projects() {
                       className={styles.projects__Image}
                       alt={project.name}
                       src={project?.image}
+                      height="auto"
+                      width="auto"
                     />
                   ) : (
                     <div
