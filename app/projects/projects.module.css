@@ -5,6 +5,7 @@
   padding-top: 1rem;
   padding-bottom: 6rem;
   scrollbar-width: none;
+  padding-bottom: 3rem;
 }
 .projects__Wrapper::-webkit-scrollbar {
   display: none;
@@ -95,4 +96,5 @@
   .projects__Pill {
     padding: 0.4rem 2rem;
   }
+
 }

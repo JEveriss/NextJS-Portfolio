@@ -3,8 +3,10 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./navigation.module.css";
+import '../../lib/globals.css'
 
 const navLinks = ["About", "Projects", "Experience"];
+
 
 function Navigation() {
   const pathname = usePathname();

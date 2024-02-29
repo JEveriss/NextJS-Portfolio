@@ -12,7 +12,7 @@ function Footer() {
       <ul className={styles.footer__IconList}>
         {/* {footerLinks.map((footerLink) => {
           return (
-            <li key={footerLink.name}>
+            <li key={`${i}${footerLink}`}>
               <Link href={footerLink.link}>
                 <Image
                   className={styles.footer__Image}
