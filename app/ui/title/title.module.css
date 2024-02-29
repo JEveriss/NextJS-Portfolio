@@ -21,3 +21,9 @@
 .title__Letter:hover {
   text-shadow: 10px 10px var(--primary-accent);
 }
+
+@media (max-width: 720px) {
+  .title__Wrapper {
+    margin: 3rem 1rem 0;
+  }
+}

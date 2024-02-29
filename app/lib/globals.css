@@ -127,14 +127,14 @@ a {
   }
   section {
     gap: 3rem;
-    margin: 1rem;
+    margin: 0;
     padding: 1rem;
   }
 
   .global__Title {
     position: sticky;
     display: flex;
-    padding: 0 1rem;
+    padding: 1rem;
     top: 0;
     background-color: #fffefb55;
     backdrop-filter: blur(5px);

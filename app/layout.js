@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
           </div>
           <div className={`${styles.main__Right} ${styles.main__RightMobile}`}>
             <Home />
-            
             <Projects />
             <Experience />
           </div>

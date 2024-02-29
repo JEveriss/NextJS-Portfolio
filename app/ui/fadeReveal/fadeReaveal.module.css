@@ -1,6 +1,6 @@
 .fadeReveal__Visible {
   opacity: 1;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 .fadeReveal__Hidden {
   opacity: 0;
@@ -8,6 +8,6 @@
 
 @media (max-width: 720px) {
   .fadeReveal__Visible {
-    padding: 0;
+    padding: 0 0 0 0;
   }
 }

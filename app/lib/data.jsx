@@ -135,7 +135,7 @@ export const data = {
           It is currently still in development.
         </span>
       ),
-      techStack: ["Next.js", "TypeScript", "CSS Modules"],
+      techStack: ["Next.js", "TypeScript", "CSS Modules", "Figma"],
       image: "",
     },
     {

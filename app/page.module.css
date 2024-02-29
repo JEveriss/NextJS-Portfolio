@@ -1,0 +1,92 @@
+.main__Wrapper {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+
+.main__Left,
+.main__Right {
+  width: 50%;
+}
+
+.main__RightMobile {
+  display: none;
+}
+
+.main__Left {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.home__Wrapper {
+  gap: 1rem;
+  padding: 4.5rem 1rem;
+}
+
+.home__Avatar {
+  padding: 3rem;
+}
+.home__AvatarWrapper {
+  margin: 0 auto;
+  position: relative;
+}
+.home__Avatar:hover + .home__AvatarText {
+  opacity: 1;
+}
+.home__AvatarText {
+  border-radius: 0.5rem;
+  color: var(--primary-background);
+  left: 62%;
+  opacity: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 20%;
+  transition: opacity 0.2s;
+}
+.home__EmailLink {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .main__Wrapper {
+    flex-direction: column;
+    overflow: clip;
+    gap: 4rem;
+  }
+
+  .main__Left {
+    position: relative;
+    gap: 3rem;
+  }
+
+  .main__Left,
+  .main__Right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__RightMobile {
+    display: contents;
+  }
+
+  .main__RightDesktop {
+    display: none;
+  }
+
+  .main__EmailLink {
+    display: none;
+  }
+  .home__Wrapper {
+    padding: 2rem 2rem 0 2rem;
+  }
+  .home__AvatarWrapper {
+    display: none;
+  }
+  .home__EmailLink {
+    display: inline;
+  }
+}
