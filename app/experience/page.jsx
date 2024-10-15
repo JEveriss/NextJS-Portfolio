@@ -15,9 +15,13 @@ function Experience() {
         return (
           <FadeReveal key={i + item} x={200} duration="0.5s" threshold={0.01}>
             <div className={styles.experience__Card}>
-              <Link href={item?.link}>
+              {item.link ? (
+                <Link href={item?.link} target="_blank">
+                  <h3 className={styles.experience__Company}>{item.company}</h3>
+                </Link>
+              ) : (
                 <h3 className={styles.experience__Company}>{item.company}</h3>
-              </Link>
+              )}
               <h4 className={styles.experience__Position}>{item.position}</h4>
               <p className={styles.experience__Description}>
                 {item.description}
